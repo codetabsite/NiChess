@@ -1,0 +1,3 @@
+-keep class com.tdev.nichess.** { *; }
+-keepclassmembers class * extends androidx.lifecycle.ViewModel { *; }
+-dontwarn kotlin.**

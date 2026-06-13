@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renk"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rb_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beyaz"
+            android:checked="true"
+            android:textColor="@color/text_primary" />
+
+        <RadioButton
+            android:id="@+id/rb_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siyah"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/text_primary" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yapay Zeka Seviyesi (ELO)"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_elo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="800"
+        android:valueTo="2800"
+        android:stepSize="100"
+        android:value="1200"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tema"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/theme_names" />
+
+</LinearLayout>
